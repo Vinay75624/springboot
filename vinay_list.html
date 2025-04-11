@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vinay List</title>
+</head>
+<body>
+<h2>List of Vinays</h2>
+<table border="1">
+    <tr><th>ID</th><th>Name</th></tr>
+    <tr th:each="v : ${vinayList}">
+        <td th:text="${v.id}"></td>
+        <td th:text="${v.name}"></td>
+    </tr>
+</table>
+<a href="/vinay">Add Another</a>
+</body>
+</html>

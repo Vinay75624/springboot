@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vinay Form</title>
+</head>
+<body>
+<h2>Add Vinay</h2>
+<form th:action="@{/vinay}" th:object="${vinay}" method="post">
+    ID: <input type="text" th:field="*{id}" /><br>
+    Name: <input type="text" th:field="*{name}" /><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
